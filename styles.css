@@ -267,33 +267,62 @@ section#reviews p {
     margin-bottom: 20px;
 }
 
-/* Style for the review slideshow */
-section#reviews .slideshow-container {
-    max-width: 600px;
-    margin: 0 auto;
-    overflow: hidden;
-    position: relative;
+/* Add this to your existing CSS */
+
+section#reviews {
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    margin: 20px 0;
 }
 
-section#reviews .slide {
-    display: none;
+section#reviews h2 {
+    color: #333;
+    font-size: 2em;
+    margin-bottom: 20px;
 }
 
-section#reviews .review-img {
-    width: 100%;
-    border-radius: 10px;
+section#reviews p {
+    color: #555;
+    font-size: 1.2em;
+    line-height: 1.6;
+    margin-bottom: 20px;
 }
 
-section#reviews .review-text {
+.review-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.review {
+    width: 300px;
+    margin: 20px;
     text-align: center;
-    margin-top: 10px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 15px;
 }
 
-/* Add animation for slideshow */
-@keyframes slide {
-    from { opacity: .4; }
-    to { opacity: 1; }
+.review-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
 }
+
+.review-header img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.review p {
+    color: #777;
+}
+
+
 /* Add this to your existing CSS */
 
 footer {
