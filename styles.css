@@ -1,88 +1,24 @@
+* {
+    margin: 0;
+    padding: 0;
+}
 
 body {
-    font-family: Cabrini, sans-serif;
-    background-color: #F6F5F0; /* Lighter shade of creamy-white */
-    color: #06021d; /* Royal Blue */
+    font-family: 'Arial', sans-serif;
+    background-color: #F6F5F0; 
+    color: #06021d; 
     line-height: 1.6;
-    padding: 0;
-    margin: 0;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-#loading {
-    position: fixed;
-    width: 100%;
-    height: 100vh;
-    background-color: #f1f0f1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 9999;
-}
-.object{
-    position: absolute;
-    width: 100px;
-    height: 100px;
-    -webkit-animation: animate 2s infinite;
-    animation: animate 2s infinite;
-}
-
-#object_one{
-    left: 50px;
-    top: 50px;
-}
-
-
-#loading img {
-    animation: taxi-move 5s linear infinite;
-    width: 100px;
-}
-
-@keyframes taxi-move {
-    0% {
-        transform: translateX(-30%);
-    }
-    100% {
-        transform: translateX(100vw);
-    }
-}
-h2 {
-    text-align: center;
-    padding: 10px;
-    border-bottom: 2px solid #D4AF37; /* Gold */
-}
-
-nav {
-    padding: 20px;
-    background: #000000;
-    color: #f0e5d8;
-    width: 100%;
-    position: sticky;
-    top: 0;
-    z-index: 100;
-}
-
-nav ul {
-    list-style-type: none;
-    padding: 0;
-}
-nav li {
-    display: inline;
-    margin-right: 10px;
-}
-nav ul li a {
-    color: #f0e5d8; /* Cream */
-    text-decoration: none;
-}
-nav a {
-    color: #f0e5d8;
-    text-decoration: none;
-}
 
 header {
     padding: 20px;
-    background: linear-gradient(to right, #000000, #4d5468); /* Gradient background */
+    background: linear-gradient(to bottom, rgba(0,0,0,0.5), rgba(0,0,0,0.2)),
+                url("image/banner2.jpg");
+    background-size: 100%, 100%;
+    background-position: top;
     color: #ffffff;
     border-radius: 20px;
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1);
@@ -90,134 +26,337 @@ header {
     margin: 20px;
 }
 
+header h1 {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    font-weight: bold;
+}
+
+header p {
+    font-family: 'Georgia', serif;
+    padding: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
 
 header img {
     max-width: 300px;
     display: block;
     margin: 20px auto;
+    border-radius: 20px;
 }
 
-main {
-    margin: 20px;
+nav {
+    background-color: black;
+    text-align: center;
+    border-radius: 10px;
 }
 
-section {
-    background-color: #ffffff; /* Cream */
-    color: #000000; /* Royal Blue */
-    padding: 40px; /* Increased padding */
-    margin-bottom: 40px; /* Added bottom margin */
-    border-bottom: 1px solid #000000; /* Thin horizontal line at the bottom */
+nav a {
+    display: inline-block;
+    padding: 14px 20px;
+    text-decoration: none;
+    color: white;
+    transition: background-color 0.3s;
 }
-#book {
-    border-top: 2px solid #d6cd26; /* Thick golden line at the top */
-    /* ... */
+
+nav a:hover {
+    background-color: #333;
 }
+
+section#about {
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    margin: 20px 0;
+}
+
+section#about h2 {
+    color: #333;
+    font-size: 2em;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+section#about p {
+    color: #555;
+    font-size: 1.2em;
+    line-height: 1.6;
+}
+
+/* Add this to your existing CSS */
+
+section#book {
+    background-color: #f6f6f6;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    margin: 20px 0;
+}
+
+section#book h2 {
+    color: #333;
+    font-size: 2em;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+section#book p {
+    color: #555;
+    font-size: 1.2em;
+    line-height: 1.6;
+}
+
 .booking-container {
-    max-width: 600px;
-    margin: auto;
-}
-
-form {
-    display: flex;
-    flex-direction: column;
     margin-top: 20px;
 }
 
-input {
-    margin-bottom: 10px;
-    padding: 10px;
-    border-radius: 5px;
-    border: 1px solid #ddd;
-}
-
-input[type="submit"] {
-    background-color: #000000; /* Royal Blue */
-    color: #f0e5d8; /* Cream */
-    cursor: pointer;
-}
-.hamburger-menu {
-    display: none;
-    flex-direction: column;
-    justify-content: space-around;
-    width: 2rem;
-    height: 2rem;
-    cursor: pointer;
-}
-
-.hamburger-menu div {
-    width: 2rem;
-    height: 0.25rem;
-    background-color: #000000; /* Cream */
-}
-
-@media (max-width: 768px) {
-    .hamburger-menu {
-        display: flex;
-    }
-
-    #menu {
-        display: none;
-    }
-
-    #menu.active {
-        display: block;
-    }
-}
-
-.carousel {
+#booking-form {
     display: flex;
-    overflow-x: auto;
-    scroll-snap-type: x mandatory;
+    flex-direction: column;
+    align-items: center;
 }
 
-.review {
-    flex: 0 0 auto;
-    scroll-snap-align: start;
+#booking-form input[type="text"] {
     width: 100%;
-    height: 250px;
-    margin-right: 50px;
-    /* other styles as needed */
-}
-footer {
-    background-color: #000103; /* Royal Blue */
-    color: #f0e5d8; /* Cream */
-    text-align: center;
     padding: 10px;
-}
-/* ... */
-.slideshow-container {
-    max-width: 1000px;
-    position: relative;
-    margin: auto;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box;
 }
 
-.slide {
-    display: none;
-    position: absolute;
+#booking-form input[type="submit"] {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#booking-form input[type="submit"]:hover {
+    background-color: #555;
+}
+
+/* Add this to your existing CSS */
+
+section#contact {
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    margin: 20px 0;
+}
+
+section#contact h2 {
+    color: #333;
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+section#contact p {
+    color: #555;
+    font-size: 1.2em;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+
+/* Style for the contact form */
+section#contact form {
+    display: flex;
+    flex-direction: column;
+}
+
+section#contact form label {
+    margin-bottom: 5px;
+    color: #333;
+}
+
+section#contact form input[type="text"],
+section#contact form textarea {
     width: 100%;
-    height: 300px;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box;
 }
 
-.slide img {
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
+section#contact form input[type="submit"] {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
 }
 
-.slide p {
+section#contact form input[type="submit"]:hover {
+    background-color: #555;
+}
+
+/* Add this to your existing CSS */
+
+section#fleet {
+    background-color: #f6f6f6;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    margin: 20px 0;
+}
+
+section#fleet h2 {
+    color: #333;
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+section#fleet p {
+    color: #555;
+    font-size: 1.2em;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+/* Style for the vehicle images and descriptions */
+section#fleet .vehicle-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+section#fleet .vehicle {
+    width: 300px;
+    margin: 20px;
     text-align: center;
 }
 
-.slide.active {
-    display: block;
+section#fleet .vehicle img {
+    max-width: 100%;
+    border-radius: 10px;
+    margin-bottom: 10px;
 }
 
-.fade-in-text {
-    animation: fadeIn 3s linear forwards;
-    opacity: 0;
+section#fleet .vehicle p {
+    color: #777;
 }
 
-@keyframes fadeIn {
-    0% { opacity: 0; }
-    100% { opacity: 1; }
+/* Add this to your existing CSS */
+
+section#reviews {
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    margin: 20px 0;
 }
+
+section#reviews h2 {
+    color: #333;
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+section#reviews p {
+    color: #555;
+    font-size: 1.2em;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+/* Style for the review slideshow */
+section#reviews .slideshow-container {
+    max-width: 600px;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+}
+
+section#reviews .slide {
+    display: none;
+}
+
+section#reviews .review-img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+section#reviews .review-text {
+    text-align: center;
+    margin-top: 10px;
+}
+
+/* Add animation for slideshow */
+@keyframes slide {
+    from { opacity: .4; }
+    to { opacity: 1; }
+}
+/* Add this to your existing CSS */
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 30px 0;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer-section {
+    max-width: 300px;
+}
+
+.footer-section h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.social-icons {
+    display: flex;
+    gap: 10px;
+}
+
+.social-icons a {
+    display: inline-block;
+}
+
+.social-icons img {
+    width: 30px;
+    height: 30px;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 8px;
+}
+
+.footer-section a {
+    text-decoration: none;
+    color: #fff;
+    transition: color 0.3s;
+}
+
+.footer-section a:hover {
+    color: #ccc;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+    padding-top: 10px;
+    border-top: 1px solid #555;
+}
+
+
+
+
+
