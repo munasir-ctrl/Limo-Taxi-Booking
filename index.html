@@ -1,103 +1,203 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bee Limo Inc</title>
-    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="icon" href="image/taxi-solid.svg" type="image/svg">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 </head>
+
 <body>
-<div id="Loading">
+    <div class="container">
+        <div class="row">
+            <div>
+                <header id="home">
+                    <h1 class="fade-in-text">Welcome to Bee Limo Inc.</h1>
+                    <img src="https://img.freepik.com/free-vector/taxi-app-concept-illustration_52683-36028.jpg"
+                        alt="Bee Limo">
+                    <p>Your journey towards luxury, comfort, and style begins here. At Bee Limo Inc., we specialize in
+                        providing
+                        premium chauffeuring services for discerning clients who demand only the best. From seamless
+                        airport
+                        transfers to personalized journeys, experience the pinnacle of luxury travel with us.</p>
 
-    </svg>
-</div>
-<div id="loader-wrapper">
-    <div id="loading-center-absolute">
-        <img src="C:\my project\Images\gettyimages-82644130-2048x2048.jpg" id="object_one" class="object" />
-    </div>
-    <div class="loader-section section-left"></div>
-    <div class="loader-section section-right"></div>
-</div>
+                </header>
+            </div>
+            <div class="navdiv">
+                <nav>
+                    <a href="#home">Home</a>
+                    <a href="#about">About Us</a>
+                    <a href="#fleet">Meet Our Fleet</a>
+                    <a href="#book">Book</a>
+                    <a href="#reviews">Reviews</a>
+                    <a href="#contact">Contact Us</a>
+                </nav>
+            </div>
+            <div class="about">
+                <section id="about" class="aboutSection">
+                    <h2>About Us</h2>
+                    <p>Founded on the principles of reliability, professionalism, and unparalleled service quality, Bee
+                        Limo
+                        Inc. has been redefining luxury transportation for years. Our experienced team of professional
+                        chauffeurs and an elite fleet of high-end vehicles stand ready to serve your unique travel
+                        needs. Travel
+                        with us, and discover a new standard in luxury transport.</p>
 
-<header id="home">
-    <h1 class="fade-in-text">Welcome to Bee Limo Inc.</h1>
-    <img src="https://img.freepik.com/free-vector/taxi-app-concept-illustration_52683-36028.jpg" alt="Bee Limo">
-    <p>Your journey towards luxury, comfort, and style begins here. At Bee Limo Inc., we specialize in providing premium chauffeuring services for discerning clients who demand only the best. From seamless airport transfers to personalized journeys, experience the pinnacle of luxury travel with us.</p>
+                </section>
+            </div>
+            <div class="book">
+                <section id="book">
+                    <h2>Book a ride</h2>
+                    <p>Experience the ultimate in comfort and luxury with Bee Limo Inc. Book our services for your next
+                        airport
+                        transfer or personal journey, and let us take care of the details. With our uncompromising
+                        commitment to
+                        reliability and service excellence, your satisfaction is guaranteed.</p>
+                    <div class="booking-container">
+                        <form id="booking-form">
+                            <input type="text" id="name" placeholder="Your name">
+                            <input type="text" id="destination" placeholder="Your destination">
+                            <input type="submit" value="Book now">
+                        </form>
+                    </div>
+                </section>
+            </div>
+            <div class="contact">
+                <section id="contact">
+                    <h2 style="text-align: center;">Contact Us</h2>
+                    <p>Get in touch with us today to discuss your luxury transportation needs. Our professional team is
+                        on hand
+                        to provide personalized service and answer any questions you may have. Choose Bee Limo Inc. for
+                        reliable,
+                        professional, and unrivaled luxury chauffeuring services.</p>
 
-</header>
+                    <form id="contact-form">
+                        <label for="name">Your Name:</label>
+                        <input type="text" id="name" name="name" placeholder="Your name" required>
 
-<nav>
-    <div class="hamburger-menu" onclick="toggleMenu()">
-        <div></div>
-        <div></div>
-        <div></div>
-    </div>
-    <ul Bee Limo
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About Us</a></li>
-        <li><a href="#fleet">Meet Our Fleet</a></li>
-        <li><a href="#book">Book</a></li>
-        <li><a href="#reviews">Reviews</a></li>
-        <li><a href="#contact">Contact Us</a></li>
-    </ul>
-</nav>
+                        <label for="email">Your Email:</label>
+                        <input type="text" id="email" name="email" placeholder="Your email" required>
 
+                        <label for="message">Your Message:</label>
+                        <textarea id="message" name="message" placeholder="Type your message here" required></textarea>
 
-<main>
-    <section id="about">
-        <h2>About Us</h2>
-        <p>Founded on the principles of reliability, professionalism, and unparalleled service quality, Bee Limo Inc. has been redefining luxury transportation for years. Our experienced team of professional chauffeurs and an elite fleet of high-end vehicles stand ready to serve your unique travel needs. Travel with us, and discover a new standard in luxury transport.</p>
+                        <input type="submit" value="Submit">
+                    </form>
+                </section>
+            </div>
+            <div class="fleet">
+                <section id="fleet">
+                    <h2>Meet Our Fleet</h2>
+                    <p>Our meticulously maintained fleet features a range of luxury vehicles equipped with
+                        state-of-the-art
+                        amenities. Each vehicle is chosen for its superior comfort, style, and safety features, ensuring
+                        a
+                        smooth and enjoyable journey for every passenger. Explore our fleet and find the perfect match
+                        for your
+                        travel requirements.</p>
 
-    </section>
-    <section id="book">
-        <h2>Book a ride</h2>
-        <p>Experience the ultimate in comfort and luxury with Bee Limo Inc. Book our services for your next airport transfer or personal journey, and let us take care of the details. With our uncompromising commitment to reliability and service excellence, your satisfaction is guaranteed.</p>
-        <div class="booking-container">
-            <form id="booking-form">
-                <input type="text" id="name" placeholder="Your name">
-                <input type="text" id="destination" placeholder="Your destination">
-                <input type="submit" value="Book now">
-            </form>
+                    <div class="vehicle-container">
+                        <div class="vehicle">
+                            <img src="image/jeep.jpg" alt="Vehicle 1">
+                            <p>Jeep</p>
+                        </div>
+
+                        <div class="vehicle">
+                            <img src="image/suv.jpg" alt="Vehicle 2">
+                            <p>SUV</p>
+                        </div>
+                        <div class="vehicle">
+                            <img src="image/defender.jpg" alt="Vehicle 3">
+                            <p>Land Rover Defende</p>
+                        </div>
+                    </div>
+                </section>
+                <div class="reviwes">
+                    <section id="reviews">
+                        <h2>Customer Reviews</h2>
+                        <p>Don't just take our word for it—read what our satisfied customers have to say about their
+                            experiences
+                            with Bee Limo Inc. We take pride in exceeding our clients' expectations and delivering a
+                            luxury service
+                            that is second to none.</p>
+
+                        <div class="review-container">
+                            <!-- Review 1 -->
+                            <div class="review">
+                                <div class="review-header">
+                                    <img src="image/customer.jpg" alt="Customer 1">
+                                    <p>John Doe</p>
+                                </div>
+                                <p class="review-text">"Amazing service! The chauffeur was punctual, the vehicle was
+                                    luxurious, and the
+                                    entire experience was top-notch. Will definitely use Bee Limo Inc. again."</p>
+                            </div>
+
+                            <!-- Review 2 -->
+                            <div class="review">
+                                <div class="review-header">
+                                    <img src="image/customer1.jpg" alt="Customer 2">
+                                    <p>Jane Smith</p>
+                                </div>
+                                <p class="review-text">"From booking to drop-off, everything was seamless.
+                                    Professionalism,
+                                    reliability, and comfort define Bee Limo Inc. Highly recommended for anyone seeking
+                                    a first-class
+                                    transportation experience."</p>
+                            </div>
+
+                            <!-- Add more reviews as needed -->
+                        </div>
+                    </section>
+
+                </div>
+                <div class="footer">
+                    <footer>
+                        <div class="footer-container">
+                            <div class="footer-section">
+                                <h3>Contact Us</h3>
+                                <p>Email: info@beelimo.com</p>
+                                <p>Phone: +1 (555) 123-4567</p>
+                            </div>
+
+                            <div class="footer-section">
+                                <h3>Follow Us</h3>
+                                <div class="social-icons">
+                                    <!-- Add your social media icons and links here -->
+                                    <a href="#" target="_blank"><img src="image/facebook-f.svg" alt="Facebook"></a>
+                                    <a href="#" target="_blank"><img src="image/twitter.svg" alt="Twitter"></a>
+                                    <a href="#" target="_blank"><img src="image/instagram.svg" alt="Instagram"></a>
+                                </div>
+                            </div>
+
+                            <div class="footer-section">
+                                <h3>Quick Links</h3>
+                                <ul>
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">About Us</a></li>
+                                    <li><a href="#">Meet Our Fleet</a></li>
+                                    <li><a href="#">Book a Ride</a></li>
+                                    <li><a href="#">Customer Reviews</a></li>
+                                    <li><a href="#">Contact Us</a></li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="footer-bottom">
+                            <p>© 2023 Bee Limo Inc. | All Rights Reserved</p>
+                        </div>
+                    </footer>
+                </div>
+            </div>
         </div>
-    </section>
-    <section id="contact">
-        <h2>Contact Us</h2>
-        <p>Get in touch with us today to discuss your luxury transportation needs. Our professional team is on hand to provide personalized service and answer any questions you may have. Choose Splenda Limo Inc. for reliable, professional, and unrivaled luxury chauffeuring services.</p>
-
-        <p>Contact information for Bee Limo Inc.</p>
-    </section>
-
-    <section id="fleet">
-        <h2>Meet Our Fleet</h2>
-        <p>Our meticulously maintained fleet features a range of luxury vehicles equipped with state-of-the-art amenities. Each vehicle is chosen for its superior comfort, style, and safety features, ensuring a smooth and enjoyable journey for every passenger. Explore our fleet and find the perfect match for your travel requirements.</p>
-
-        <!-- Add images and descriptions of your vehicles here -->
-    </section>
-
-    <!-- Add Reviews section with carousel -->
-    <section id="reviews">
-        <h2>Customer Reviews</h2>
-        <p>Don't just take our word for it—read what our satisfied customers have to say about their experiences with Bee Limo Inc .we take pride in exceeding our clients' expectations and delivering a luxury service that is second to none.</p>
-
-        <div class="slideshow-container">
-            <!-- Add reviews here -->
-            <div class="slide">
-                <img class="review-img" src="review-image-url-1" alt="Review 1">
-                <p class="review-text">Review 1</p>
-            </div>
-            <div class="slide">
-                <img class="review-img" src="review-image-url-2" alt="Review 2">
-                <p class="review-text">Review 2</p>
-            </div>
-            <div class="slide">
-                <img class="review-img" src="review-image-url-3" alt="Review 3">
-                <p class="review-text">Review 3</p>
-            </div>
-        </div>
-    </section>
-
-</main>
-<footer>
-    <p>© 2023 Bee Limo Inc.</p>
-</footer>
-<script src="scripts.js"></script>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>

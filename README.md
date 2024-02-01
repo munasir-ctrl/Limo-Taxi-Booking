@@ -1,20 +1,50 @@
+# Bee Limo Inc. Website
 
-Hi! My introduction to coding was through front-end work and as I now have the tools to create full stack projects, I decided to embark on a journey to develop a full stack website. I am designing for a luxury transit corporation, Splenda Limo Inc, based on their needs and customization they wish to have.
+Welcome to the Bee Limo Inc. website repository! This repository contains the source code for our luxury transportation website.
 
-** Work stream: **
+## Table of Contents
 
-Front-end Development:
-I want to first create the front end development process by using Figma to figure out how I want my final design to look like. The first trial is making sure it looks pleasing, easy to navigate, and simple to then integrate the backend in the later steps.
+- [About](#about)
+- [Features](#features)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Contributing](#contributing)
+- [License](#license)
 
-Back-end Development:
-I am planning on using React.js to integrate the back-end, particularly creating and integrating data bases where the client will be able to create a secure account and log in / log out and make requests.
+## About
 
-Testing + Feedback
-Step 3 involves presenting the mock-up website to Splenda Limo, Inc. and continue working based on their feedback as well as getting to understand what would help them do better in their business.
+Bee Limo Inc. is a premium chauffeuring service that specializes in luxury transportation. This repository houses the source code for our official website, where clients can learn more about our services, book rides, read customer reviews, and get in touch with us.
 
-Implementation + Building
-Integrating the back-end to the front-end and assisting in securing naming / domain names. Then using a web-hosting service such as NameCheap to publish the website online.
+## Features
 
-Public Release
-Be in contact in case of questions and overall monitor the website for a week in case there were any possible bugs that need to be resolved before being released to clients.
+- **Responsive Design:** The website is designed to be accessible and usable on various devices, including desktops, tablets, and mobile phones.
 
+- **Sections:**
+
+  - Home
+  - About Us
+  - Meet Our Fleet
+  - Book a Ride
+  - Customer Reviews
+  - Contact Us
+
+- **Styling:**
+
+  - Elegant and modern design
+  - Consistent color scheme
+  - Animated hover effects on navigation and buttons
+
+- **Content:**
+  - Engaging content about our services and fleet
+  - Customer reviews and testimonials
+  - Easy-to-use booking form
+
+## Installation
+
+To get a local copy of the project up and running, follow these steps:
+
+1. Clone the repository:
+
+   ```bash
+   git clone https://github.com/thayoob/bee-limo-inc-website.git
+   ```
